@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RedTable" translatesAutoresizingMaskIntoConstraints="NO" id="6Z1-6g-Shr">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CUI-N7-32y">
+                                <rect key="frame" x="0.0" y="59" width="430" height="839"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zE-XA-JNg" userLabel="LogoContainer">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="274.33333333333331"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VegasWelcome" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="34b-dJ-ZaI">
+                                                <rect key="frame" x="105" y="87.333333333333343" width="220" height="100.00000000000003"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="220" id="Anj-hx-2YR"/>
+                                                    <constraint firstAttribute="height" constant="100" id="WOp-vZ-pIo"/>
+                                                </constraints>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="10" scale="default" weight="regular"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="34b-dJ-ZaI" firstAttribute="centerY" secondItem="1zE-XA-JNg" secondAttribute="centerY" id="Syl-W2-IbC"/>
+                                            <constraint firstItem="34b-dJ-ZaI" firstAttribute="centerX" secondItem="1zE-XA-JNg" secondAttribute="centerX" id="coP-f7-ev1"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QrY-Q4-tI1" userLabel="DiceContainer">
+                                        <rect key="frame" x="0.0" y="282.33333333333337" width="430" height="274.33333333333337"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="hUf-Od-OA9" userLabel="DiceHContainer">
+                                                <rect key="frame" x="55.666666666666657" y="73.333333333333371" width="319" height="128"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Black1" translatesAutoresizingMaskIntoConstraints="NO" id="T3y-gT-isA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="128" id="4B7-q6-w4L"/>
+                                                            <constraint firstAttribute="height" constant="128" id="Ry6-VI-Khu"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Black1" translatesAutoresizingMaskIntoConstraints="NO" id="ctx-2G-fUJ">
+                                                        <rect key="frame" x="191" y="0.0" width="128" height="128"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="hUf-Od-OA9" firstAttribute="centerX" secondItem="QrY-Q4-tI1" secondAttribute="centerX" id="Ghc-gj-2nO"/>
+                                            <constraint firstItem="hUf-Od-OA9" firstAttribute="centerY" secondItem="QrY-Q4-tI1" secondAttribute="centerY" id="ZCZ-NO-Q9h"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ke8-tM-b2u" userLabel="BttonsContainer">
+                                        <rect key="frame" x="0.0" y="564.66666666666663" width="430" height="274.33333333333337"/>
+                                        <subviews>
+                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9z7-cf-hAH">
+                                                <rect key="frame" x="165" y="103.33333333333337" width="100" height="68"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="bz1-EF-AFk"/>
+                                                    <constraint firstAttribute="height" constant="68" id="rDu-hU-HK2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <size key="titleShadowOffset" width="12" height="12"/>
+                                                <state key="normal" title="Roll"/>
+                                                <connections>
+                                                    <action selector="rollDiceTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Egk-Eu-kV7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtj-eo-wYM">
+                                                <rect key="frame" x="322" y="103.33333333333337" width="68" height="68"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="68" id="5RQ-k5-wYE"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="ICX-hm-sKj"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="Settings" imageContentMode="scaleToFill"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="settingsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="knl-3A-uHB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="dtj-eo-wYM" firstAttribute="centerY" secondItem="ke8-tM-b2u" secondAttribute="centerY" id="2Uo-j1-Q4E"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="dtj-eo-wYM" secondAttribute="trailingMargin" constant="40" id="Ddk-qf-mrV"/>
+                                            <constraint firstItem="9z7-cf-hAH" firstAttribute="centerY" secondItem="ke8-tM-b2u" secondAttribute="centerY" id="ESR-fZ-7DD"/>
+                                            <constraint firstItem="9z7-cf-hAH" firstAttribute="centerX" secondItem="ke8-tM-b2u" secondAttribute="centerX" id="MhC-sn-1FG"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CUI-N7-32y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5pk-xA-ZpN"/>
+                            <constraint firstItem="6Z1-6g-Shr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9dX-si-y8a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CUI-N7-32y" secondAttribute="bottom" id="KLX-y7-Go6"/>
+                            <constraint firstItem="CUI-N7-32y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XTN-dF-zBW"/>
+                            <constraint firstAttribute="bottom" secondItem="6Z1-6g-Shr" secondAttribute="bottom" id="ise-dr-ETs"/>
+                            <constraint firstItem="6Z1-6g-Shr" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="lOo-uv-Y8z"/>
+                            <constraint firstItem="CUI-N7-32y" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qcC-d1-8Xx"/>
+                            <constraint firstItem="6Z1-6g-Shr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vGn-f7-ujR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backGround" destination="6Z1-6g-Shr" id="HTd-Yv-qqr"/>
+                        <outlet property="diceOne" destination="T3y-gT-isA" id="5yI-NV-Ke6"/>
+                        <outlet property="diceTwo" destination="ctx-2G-fUJ" id="Vxp-lx-Omd"/>
+                        <outlet property="welcome" destination="34b-dJ-ZaI" id="QB9-9e-ZbI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.093023255813954" y="-27.038626609442062"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Black1" width="290.33334350585938" height="290.33334350585938"/>
+        <image name="RedTable" width="1666.6666259765625" height="1666.6666259765625"/>
+        <image name="Settings" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="VegasWelcome" width="324" height="165.33332824707031"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
